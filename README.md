@@ -2,7 +2,7 @@
 ## Ejemplos matemáticos presentados en diagramas de flujo y pseudocódigos
 
 ### Determinación de números primos hasta n
-
+#### Diagrama de flujo (secuencia del algoritmo)
 ```mermaid
 flowchart TD;
     A(Números primos hasta n)-->B[Crear una lista de números naturales desde 2 hasta n];
@@ -26,6 +26,7 @@ flowchart TD;
     M -- No --> N(Fin);
     M -- Sí --> J;
 ```
+#### Pseudocódigo
 
 ```pseudocode
 [variables]
