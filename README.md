@@ -55,6 +55,33 @@ agregar a la lista (i)
  Fin mientras
 Fin 
 ```
-
-
+### Hallar raíz cuadrada de un número
+```mermaid
+flowchart TD;
+    A(Raíz cuadrada de un número)-->B[Dividir el número en pares de dígitos];
+    B --> C;
+    C[Para el par de dígitos que se encuentre más hacia la izquierda, buscar un x tal que su multiplicación por sí mismo sea menor o igual que el primer par de dígitos];
+    C-->D
+    D{x^2 es menor o igual al par de dígitos?} -- Sí --> E[Restar el x^2 al par de dígitos];
+    D -- No --> F[Buscar un x más pequeño];
+    E-->G;
+    F -->E 
+    G[Bajar los siguientes pares de dígitos y tomar en cuenta los dos primero dígitos del residuo de la resta]
+    G -->H 
+    H[Dividirlos entre el doble de x];
+    H--> I[Tomar en cuenta la parte entera del cociente de la división];
+    I-->J[Tomar esta como último dígito del doble de x, x con la introducción de un dígito entero n = r];
+    J-->K[Hacer el producto entre r y la parte entera de la anterior división];
+    K -->L{ el resultado es menor o igual al residuo total de la resta previa?} -- Sí --> M[Tomar en cuenta la parte entera de la divisón];
+    L--No -->N[Buscar un dígito n que satisfaga la desigualdad];
+    M -->O[Poner el dígito n junto a x];
+    N --> M 
+    O -->P[Restar el producto de r y la parte entera al residuo de la resta previa];
+    P --> Q
+    Q{el resultado de la resta es 0?} -- Sí --> R[La raíz cuadrada es x con el dígito n puesto en la derecha]
+    Q -- No --> S[Agregar dos dígitos 0 al resultado de la última resta, .00 al número que queremos hallarle la raíz cuadrada y . a x con el dígito n];
+    S --> T[Buscar el doble de x con el dígito n];
+    T--> I 
+    R --> U(Fin)
+```
 	
