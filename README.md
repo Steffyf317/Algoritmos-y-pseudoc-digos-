@@ -1,5 +1,5 @@
 # Algoritmos y pseudocódigos
-## Ejemplos matemáticos presentados en diagramas de flujo y pseudocódigos
+## Procedimientos matemáticos presentados en diagramas de flujo y pseudocódigos
 
 ### Determinación de números primos hasta n
 #### Diagrama de flujo (secuencia del algoritmo)
