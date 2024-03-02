@@ -84,4 +84,41 @@ flowchart TD;
     T--> I 
     R --> U(Fin)
 ```
-	
+#### Pseudocódigo
+
+```pseudocode
+[variables]
+x : entero
+n : entero
+r : entero
+y : real
+t : entero
+
+inicio
+crear lista de pares de dígitos.i []
+crear lista de 0 a 9.x []
+para cada i:
+ mientras (i<= x^2) hacer
+  i-x^2
+ si no
+   probar con un x menor de la lista
+ Fin mientras
+Tomar los dos primeros dígitos de la resta = s	
+y = s/2*x
+Tomar los dígitos enteros de y y ponerlos en la parte derecha de x = r
+r*parte entera de y = t
+ mientras (t<=(i-x^2)) hacer
+  Tomar la parte entera de y 
+ sino
+    Buscar un n tal que cumpla la desigualdad
+ Fin mientras
+Poner el dígito n junto a x = a
+(i-x^2)-t
+ mientras (i-x^2)-t = 0 hacer
+   raizcuadrada del numero = a
+ sino
+   resultado de (i-x^2)-t agregarle dos cifras decimales (00), .00 al número que queremos hallarle la raíz cuadrada y . a a
+ Fin mientras
+Fin 
+
+
