@@ -56,6 +56,7 @@ agregar a la lista (i)
 Fin 
 ```
 ### Hallar raíz cuadrada de un número
+#### Diagrama de flujo
 ```mermaid
 flowchart TD;
     A(Raíz cuadrada de un número)-->B[Dividir el número en pares de dígitos];
